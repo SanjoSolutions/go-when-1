@@ -8,6 +8,9 @@ class GoWhen1:
         self.state = self._generate_state()
         self.reset()
 
+    def request_available_actions(self):
+        return (0, 1)
+
     def reset(self):
         self.current_step = 0
         self.state = self._generate_state()
